@@ -22,7 +22,7 @@ services:
       context: ./customer/
     image: api_customer:latest
     ports:
-      - '8000:8000'
+      - '8989:8989'
     networks:
       - proxy
 #----- REST API Book powered by Golang
@@ -34,7 +34,7 @@ services:
     depends_on: 
       - go_db
     ports: 
-      - '8001:8001' 
+      - '8989:8989' 
     networks:
       - proxy
       - db
@@ -58,7 +58,7 @@ services:
     depends_on:
       - mssqlserver
     ports:
-      - '8002:8002'
+      - '8989:8989'
     networks:
       - proxy
       - db
