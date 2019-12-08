@@ -1,7 +1,11 @@
 ﻿Hệ thống sẽ gồm có các container như sau, Follow theo cac Step o duoi sau day:
+
 STEP 1. Nginx đóng vai trò reverse proxy, host: api_gateway
+
 STEP 2. Node.js REST, host api_customer, phục vụ ở cổng 8000, kết nối vào CSDL Mongo DB
+
 STEP 3. Golang REST, host api_book, phục vụ ở cổng 8001, kết nối vào CSDL Postgresql host go_db
+
 STEP 4. ASP.net MVC Core REST, host course,cổng 8002 kết nối vào CSDL Microsoft SQL Server 2017, host 
 
 ```
